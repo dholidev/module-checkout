@@ -24,8 +24,7 @@
   "require": {
     "php": "~7.3|~7.4",
     "magento/framework": "103.0.*",
-    "dholi/module-core": "dev-master",
-    "dholi/module-google-geolocation": "dev-master"
+    "dholi/module-core": "dev-master"
   },
   "license": [
     "OSL-3.0",
