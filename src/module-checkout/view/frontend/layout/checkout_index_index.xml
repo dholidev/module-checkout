@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="checkout" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<referenceBlock name="checkout.root">
+		<arguments>
+			<argument name="jsLayout" xsi:type="array">
+				<item name="components" xsi:type="array">
+					<item name="checkout" xsi:type="array">
+						<item name="children" xsi:type="array">
+							<item name="steps" xsi:type="array">
+								<item name="children" xsi:type="array">
+									<item name="shipping-step" xsi:type="array">
+										<item name="children" xsi:type="array">
+											<item name="shippingAddress" xsi:type="array">
+												<item name="children" xsi:type="array">
+													<item name="shipping-address-fieldset" xsi:type="array">
+														<item name="children" xsi:type="array">
+															<item name="firstname" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">20</item>
+															</item>
+															<item name="lastname" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">21</item>
+															</item>
+															<item name="vat_id" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">30</item>
+															</item>
+															<item name="taxvat" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">32</item>
+															</item>
+															<item name="telephone" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">32</item>
+															</item>
+															<item name="street" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">40</item>
+															</item>
+															<item name="postcode" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">71</item>
+															</item>
+															<item name="region_id" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">80</item>
+															</item>
+															<item name="country_id" xsi:type="array">
+																<item name="sortOrder" xsi:type="string">81</item>
+															</item>
+														</item>
+													</item>
+												</item>
+											</item>
+										</item>
+									</item>
+								</item>
+							</item>
+						</item>
+					</item>
+				</item>
+			</argument>
+		</arguments>
+	</referenceBlock>
+</page>

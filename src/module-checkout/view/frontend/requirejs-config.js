@@ -1,0 +1,1 @@
+const config={config:{mixins:{"mage/validation":{"Dholi_Checkout/js/validator/unique-taxvat-validation":true},"Magento_Checkout/js/view/cart/shipping-estimation":{"Dholi_Checkout/js/mixin/cart-autocomplete":true},"Magento_Checkout/js/action/set-shipping-information":{"Dholi_Checkout/js/mixin/address-autocomplete":true,"Dholi_Checkout/js/mixin/unique-taxvat":true}}}};

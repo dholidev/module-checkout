@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="dholi_checkout" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+			<class>separator-top</class>
+			<label>Checkout</label>
+			<tab>dholi</tab>
+			<resource>Dholi_Checkout::config</resource>
+			<group id="information" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Information</label>
+				<frontend_model>Dholi\Checkout\Block\Adminhtml\System\Config\Information</frontend_model>
+			</group>
+
+			<group id="general" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Checkout - dholi.dev</label>
+				<field id="unique_taxvat" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Unique Taxvat</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<comment>Unique Taxvat Note</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

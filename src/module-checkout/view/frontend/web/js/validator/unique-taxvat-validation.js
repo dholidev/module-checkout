@@ -1,0 +1,1 @@
+define(["jquery"],function(a){return function(){a.validator.addMethod("validate-unique-taxvat",function(c,b){return !b.classList.contains("unique-taxvat-error")},a.mage.__("Taxvat already registered"))}});
