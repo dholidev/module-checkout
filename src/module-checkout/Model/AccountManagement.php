@@ -44,13 +44,13 @@ class AccountManagement implements AccountManagementInterface {
 		if (!$this->helper->validateUniqueTaxvat($this->storeManager->getStore()->getId())) {
 			return true;
 		}
-
-		$taxVat = preg_replace('/\D/', '', $taxvat);
-
 		$customer = $this->customerFactory->create()->getCollection()
-			->addAttributeToSelect("*")
-			->addAttributeToFilter("taxvat", array("eq" => $taxVat))
-			->addAttributeToFilter("website_id", array("eq" => $websiteId))
+			->addAttributeToSelect("taxvat")
+			->addFieldToFilter("website_id", ["eq" => $websiteId])
+			->addFieldToFilter("taxvat", [
+				["eq" => $taxvat],
+				["eq" => preg_replace('/\D/', '', $taxvat)]
+			])
 			->load();
 
 		return (count($customer) == 0);
