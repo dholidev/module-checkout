@@ -42,7 +42,7 @@ class LayoutProcessor implements LayoutProcessorInterface {
 						],
 						'dataScope' => '0',
 						'provider' => 'checkoutProvider',
-						'validation' => ['required-entry' => true, "min_text_len‌​gth" => 1, "max_text_length" => 255],
+						'validation' => ['required-entry' => true, "min_text_length" => 1, "max_text_length" => 255],
 					],
 					[
 						'label' => __('Street Address 2'),
@@ -54,7 +54,7 @@ class LayoutProcessor implements LayoutProcessorInterface {
 						],
 						'dataScope' => '1',
 						'provider' => 'checkoutProvider',
-						'validation' => ['required-entry' => true, "min_text_len‌​gth" => 1, "max_text_length" => 255],
+						'validation' => ['required-entry' => true, "min_text_length" => 1, "max_text_length" => 255],
 					],
 					[
 						'label' => __('Street Address 3'),
@@ -66,7 +66,7 @@ class LayoutProcessor implements LayoutProcessorInterface {
 						],
 						'dataScope' => '2',
 						'provider' => 'checkoutProvider',
-						'validation' => ['required-entry' => false, "min_text_len‌​gth" => 1, "max_text_length" => 255],
+						'validation' => ['required-entry' => false, "min_text_length" => 1, "max_text_length" => 255],
 					],
 					[
 						'label' => __('Street Address 4'),
@@ -78,7 +78,7 @@ class LayoutProcessor implements LayoutProcessorInterface {
 						],
 						'dataScope' => '3',
 						'provider' => 'checkoutProvider',
-						'validation' => ['required-entry' => true, "min_text_len‌​gth" => 1, "max_text_length" => 255],
+						'validation' => ['required-entry' => true, "min_text_length" => 1, "max_text_length" => 255],
 					],
 				]
 			];
