@@ -22,9 +22,9 @@
     "email": "comunidade@dholi.dev"
   },
   "require": {
-    "php": "~7.3|~7.4",
-    "magento/framework": "103.0.*",
-    "dholi/module-core": "dev-master"
+    "php": "~7.2|~7.3|~7.4",
+    "magento/framework": "102.0.*|103.0.*",
+    "dholi/module-geolocation": "dev-master"
   },
   "license": [
     "OSL-3.0",

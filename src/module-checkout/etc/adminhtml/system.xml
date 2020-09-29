@@ -18,11 +18,6 @@
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 					<comment>Unique Taxvat Note</comment>
 				</field>
-				<field id="address_provider" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
-					<label>ZipCode Provider</label>
-					<source_model>Dholi\Checkout\Block\Adminhtml\Config\Source\ZipCodeProvider</source_model>
-					<comment><![CDATA[]]></comment>
-				</field>
 			</group>
 		</section>
 	</system>

@@ -31,13 +31,4 @@ interface CheckoutInterface {
 	 * @throws \Magento\Framework\Exception\LocalizedException
 	 */
 	public function isTaxvatAvailable($taxvat, $websiteId = null);
-
-	/**
-	 * Get address by zipcode.
-	 *
-	 * @param string $zipcode
-	 * @return string
-	 * @throws \Magento\Framework\Exception\LocalizedException
-	 */
-	public function getAddressByZipCode($zipcode);
 }

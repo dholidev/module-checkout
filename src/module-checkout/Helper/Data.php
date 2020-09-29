@@ -21,9 +21,7 @@ use Magento\Store\Model\ScopeInterface;
 class Data extends \Magento\Framework\App\Helper\AbstractHelper {
 
 	const XML_PATH_UNIQUE_TAXVAT = 'dholi_checkout/general/unique_taxvat';
-
-	const XML_PATH_ADDRESS_PROVIDER = 'dholi_checkout/general/address_provider';
-
+	
 	protected $scopeConfig;
 
 	public function __construct(\Magento\Framework\App\Helper\Context $context, ScopeConfigInterface $scopeConfig) {
@@ -33,9 +31,5 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper {
 
 	public function validateUniqueTaxvat($storeId = 0) {
 		return (boolean) $this->scopeConfig->getValue(self::XML_PATH_UNIQUE_TAXVAT, ScopeInterface::SCOPE_STORE, $storeId);
-	}
-
-	public function addressProvider($storeId = 0): string {
-		return $this->scopeConfig->getValue(self::XML_PATH_ADDRESS_PROVIDER, ScopeInterface::SCOPE_STORE, $storeId);
 	}
 }

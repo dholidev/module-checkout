@@ -4,7 +4,6 @@
 		<dholi_checkout>
 			<general>
 				<unique_taxvat>1</unique_taxvat>
-				<address_provider>viacep</address_provider>
 			</general>
 		</dholi_checkout>
 	</default>
