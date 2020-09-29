@@ -90,7 +90,6 @@ class Checkout implements CheckoutInterface {
 			$content = json_decode($response->getBody()->getContents());
 			if(isset($content->cep)) {
 				$address = [
-					'zipcode' 			=> $content->cep,
 					'street' 				=> $content->logradouro,
 					'city' 					=> $content->localidade,
 					'state' 			 	=> $this->regionFactory->create()->loadByCode($content->uf, 'BR')->getRegionId(),
@@ -104,7 +103,6 @@ class Checkout implements CheckoutInterface {
 			
 			if(isset($content->return)) {
 				$address = [
-					'zipcode' 			=> $content->return->cep,
 					'street' 				=> $content->return->end,
 					'city' 					=> $content->return->cidade,
 					'state' 			 	=> $this->regionFactory->create()->loadByCode($content->return->uf, 'BR')->getRegionId(),
