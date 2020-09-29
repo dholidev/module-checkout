@@ -1,1 +1,1 @@
-define(["mage/storage","Dholi_Core/js/model/url-builder"],function(b,a){return function(c,d){return b.post(a.createUrl("/customers/isTaxvatAvailable",{}),JSON.stringify({taxvat:d}),false).done(function(e){if(e){c.resolve()}else{c.reject()}}).fail(function(){c.reject()})}});
+define(["mage/storage","Dholi_Core/js/model/url-builder"],function(b,a){return function(c,d){return b.post(a.createUrl("/dholi/isTaxvatAvailable",{}),JSON.stringify({taxvat:d}),false).done(function(e){if(e){c.resolve()}else{c.reject()}}).fail(function(){c.reject()})}});

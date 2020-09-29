@@ -16,11 +16,11 @@ declare(strict_types=1);
 namespace Dholi\Checkout\Api;
 
 /**
- * Interface for managing customers accounts.
+ * Interface for managing checkout.
  * @api
  * @since 100.0.2
  */
-interface AccountManagementInterface {
+interface CheckoutInterface {
 
 	/**
 	 * Check if given taxvat is associated with a customer account in given website.
@@ -31,4 +31,13 @@ interface AccountManagementInterface {
 	 * @throws \Magento\Framework\Exception\LocalizedException
 	 */
 	public function isTaxvatAvailable($taxvat, $websiteId = null);
+
+	/**
+	 * Get address by zipcode.
+	 *
+	 * @param string $zipcode
+	 * @return string
+	 * @throws \Magento\Framework\Exception\LocalizedException
+	 */
+	public function getAddressByZipCode($zipcode);
 }
