@@ -41,7 +41,6 @@ class EnderecoERP {
 	}
 	
 	public function setBairro($bairro = null) {
-		// validation for constraint: string
 		if (!is_null($bairro) && !is_string($bairro)) {
 			throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bairro, true), gettype($bairro)), __LINE__);
 		}
@@ -54,7 +53,6 @@ class EnderecoERP {
 	}
 	
 	public function setCep($cep = null) {
-		// validation for constraint: string
 		if (!is_null($cep) && !is_string($cep)) {
 			throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cep, true), gettype($cep)), __LINE__);
 		}
@@ -67,7 +65,6 @@ class EnderecoERP {
 	}
 	
 	public function setCidade($cidade = null) {
-		// validation for constraint: string
 		if (!is_null($cidade) && !is_string($cidade)) {
 			throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cidade, true), gettype($cidade)), __LINE__);
 		}
@@ -80,7 +77,6 @@ class EnderecoERP {
 	}
 	
 	public function setComplemento2($complemento2 = null) {
-		// validation for constraint: string
 		if (!is_null($complemento2) && !is_string($complemento2)) {
 			throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($complemento2, true), gettype($complemento2)), __LINE__);
 		}
@@ -105,7 +101,6 @@ class EnderecoERP {
 	}
 	
 	public function setUf($uf = null) {
-		// validation for constraint: string
 		if (!is_null($uf) && !is_string($uf)) {
 			throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($uf, true), gettype($uf)), __LINE__);
 		}

@@ -28,7 +28,7 @@ class LayoutProcessor implements LayoutProcessorInterface {
 				'required' => false,
 				'dataScope' => 'shippingAddress.street',
 				'provider' => 'checkoutProvider',
-				'sortOrder' => 40,
+				'sortOrder' => 72,
 				'type' => 'group',
 				'additionalClasses' => 'street',
 				'children' => [
