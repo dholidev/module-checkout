@@ -7,7 +7,7 @@ define([
 
         return function (deferred, zipcode) {
             return storage.post(
-                urlBuilder.createUrl('/dholi/getAddressByZipCode', {}),
+                urlBuilder.createUrl('/dholi/geolocation/address', {}),
                 JSON.stringify({zipcode: zipcode}),
                 false
             ).done(function (response) {
