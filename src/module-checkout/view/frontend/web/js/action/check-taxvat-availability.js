@@ -1,1 +1,1 @@
-define(["mage/storage","Dholi_Core/js/model/url-builder"],function(b,a){return function(c,d){return b.post(a.createUrl("/dholi/checkout/taxvat",{}),JSON.stringify({taxvat:d}),false).done(function(e){if(e){c.resolve()}else{c.reject()}}).fail(function(){c.reject()})}});
+define(["mage/storage","Dholi_Core/js/model/url-builder"],function(b,c){return function(a,d){return b.post(c.createUrl("/dholi/checkout/taxvat",{}),JSON.stringify({taxvat:d}),!1).done(function(e){e?a.resolve():a.reject()}).fail(function(){a.reject()})}});
