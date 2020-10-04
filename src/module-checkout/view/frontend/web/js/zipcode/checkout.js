@@ -15,7 +15,7 @@ define([
     return function (input) {
         const MAPPED_FIELDS = {
             'street': {'m': 'street.0'},
-            'neighborhood': {'m': 'street.3'},
+            'district': {'m': 'street.3'},
             'city': {'m': 'city'},
             'state': {'m': 'region'}
         };
